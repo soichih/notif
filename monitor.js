@@ -18,14 +18,10 @@ docker.getEvents((err, stream)=>{
       if(event.Action != "die") return;
       console.debug(event);
 
-      //get a bit more container info
       const container = docker.getContainer(event.id);
-      const info = await container.inspect(container);
-
-      //dump recent logs
+      const info = await container.inspect();
       const logs = await container.logs({ stdout: true, stderr: true, tail: 50, });
 
-      //construct message to send
       const msg = `
   --- container died -- 
   - ${info.Name} (restartcount: ${info.RestartCount})--

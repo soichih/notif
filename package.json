@@ -1,16 +1,24 @@
 {
   "name": "notif",
   "version": "1.0.0",
-  "description": "",
+  "description": "Prototype to detect Docker container restarts and notify someone.",
   "main": "index.js",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "dockerode": "^3.3.2"
+  },
+  "devDependencies": {},
   "scripts": {
-    "start": "node ./index.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anibalsolon/notif.git"
   },
   "author": "",
   "license": "ISC",
-  "type": "module",
-  "dependencies": {
-    "commander": "^9.3.0",
-    "dockerode": "^3.3.2"
-  }
+  "bugs": {
+    "url": "https://github.com/anibalsolon/notif/issues"
+  },
+  "homepage": "https://github.com/anibalsolon/notif#readme"
 }

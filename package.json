@@ -1,5 +1,6 @@
 {
   "name": "notif",
+  "type": "module",
   "version": "1.0.0",
   "description": "Prototype to detect Docker container restarts and notify someone.",
   "main": "index.js",

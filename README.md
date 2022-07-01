@@ -13,5 +13,5 @@ export default {
 Usage:
 ```
 npm i
-node monitor.js
+./monitor.js
 ```
